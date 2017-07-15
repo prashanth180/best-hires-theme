@@ -1,5 +1,5 @@
 <div data-section-id="{{ section.id }}" data-section-type="header-section">
-<header class="site-header site-header--{{ section.settings.menu_style }} {% if section.settings.menu_text_color %}{{ section.settings.menu_text_color }}{% endif %}" role="banner">
+<header class="site-header site-header--{{ section.settings.menu_style }} {% if section.settings.menu_text_color %}{{ section.settings.menu_text_color }}{% endif %} animate sticky created-by-js active" role="banner">
       <div class="wrapper">
         {% if section.settings.logo_max_width != empty and section.settings.logo != blank %}
           {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
@@ -65,7 +65,7 @@
               {% else %}
                 <li>
                   <a href="{{ link.url }}" class="site-nav__link {% if link.active %} site-nav--active {% endif %}">{{ link.title }}</a>
-                </li>
+                </li>            	
               {% endif %}
             {% endfor %}
 
@@ -73,14 +73,7 @@
               <li class="btn__buy"><a href="{{ all_products[section.settings.menu_product].url }}" class="btn btn--outline {% if section.settings.menu_style == 'classic' %} btn--small btn--dark {% else %} btn--regular btn--light {% endif %}">{{ 'layout.navigation.buy_button' | t }} {{ all_products[section.settings.menu_product].price | money_without_trailing_zeros }}</a></li>
             {% endunless %}
 
-            {% if cart.item_count > 0 %}
-              <li class="btn__cart">
-                <a href="/cart">
-                  <span class="icon" aria-hidden="true">{% unless cart.item_count > 99 %}{{ cart.item_count }}{% endunless %}{% include 'asset_svg' with 'cart' %}</span>
-                  <span class="text">{{ 'layout.navigation.shopping_cart' | t }}</span>
-                </a>
-              </li>
-            {% endif %}
+            
 
             {% if shop.customer_accounts_enabled %}
               <li class="btn__account">
@@ -95,7 +88,7 @@
 
         </nav>
 
-        <button id="menu-opener" class="lines-button" href="#">
+        <button style="top: 0px;" id="menu-opener" class="lines-button" href="#">
           <span class="fallback-text">{{ 'layout.navigation.open_menu' | t }}</span>
           <span class="lines" aria-hidden="true"></span>
         </button>

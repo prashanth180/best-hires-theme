@@ -99,18 +99,18 @@
 
 				<br><br>
 				{% if section.settings.home-kickstarter-url != blank %}
-				<a href="#pricing" class="btn btn--regular btn--dark btn--outline">Get Started</a>
+				<a href="{{ section.settings.home-kickstarter-url | escape }}" class="btn btn--regular btn--dark btn--outline">Get Started</a>
 				{% endif %}
 
 			</div>
 		</div>
 	</div>
 </div>
-<div id="how-it-works" align="middle" style="background-color:#FFF">
+<div align="middle" style="background-color:#FFF">
 	{{ 'img1.png' | asset_url | img_tag }}
 </div>
 
-<div id="pricing" align="middle" class="text-center" style="padding-top: 120px; padding-bottom: 30px">
+<div align="middle" class="text-center" style="padding-top: 80px; padding-bottom: 30px">
 	<h3>Select a Hiring Snapshot Plan</h3>
 	<h5 style="font-weight: normal;">Try out the Topgrading Hiring Snapshot with as many candidates</h5>
 	<h5 style="font-weight: normal;">as you need. Add more candidates at any time.</h5>
@@ -125,7 +125,7 @@
     <li>Topgrading Snapshot & career history for each candidate</li>
     <li>.</li>
     <li>.</li>
-    <li><a href="/pages/snapshot-checkout" class="button light-grey">Buy Now</a></li>
+    <li><a href="/collections/all" class="button light-grey">Buy Now</a></li>
   </ul>
 </div>
 <div class="columns">
@@ -137,7 +137,7 @@
     <li>Topgrading Snapshot & career history for each candidate</li>
     <li>.</li>
     <li>Save 20% </li>
-    <li><a href="/pages/snapshot-checkout" class="button light-grey">Buy Now</a></li>
+    <li><a href="#" class="button light-grey">Buy Now</a></li>
   </ul>
 </div>
 <div class="columns">
@@ -149,7 +149,7 @@
     <li>Topgrading Snapshot & career history for each candidate</li>
     <li>.</li>
     <li>Save 40% </li>
-    <li><a href="/pages/snapshot-checkout" class="button light-grey">Buy Now</a></li>
+    <li><a href="#" class="button light-grey">Buy Now</a></li>
   </ul>
 </div>
 <div class="columns">
@@ -161,7 +161,7 @@
     <li>Topgrading Snapshot & career history for each candidate</li>
     <li>Auto-populated interview guides</li>
     <li>ATS integrations</li>
-    <li><a href=" http://www.topgrading.com/topgrading-software/what-is-tols/" class="button light-grey">Learn More</a></li>
+    <li><a href="#" class="button light-grey">Buy Now</a></li>
   </ul>
 </div>
 </div>
@@ -202,11 +202,10 @@
 			<p><h4 style="padding-left: 0px; font-weight: normal">- Scott Clawson, CEO of Culligan</h4></p>
 	</div>
 </div>
-<div id="benefits" style="position: relative; padding-top: 8%">
-<div  style="height: 60px" class="text-center" >
+
+<div style="height: 60px;" class="text-center" >
 	<p><h3>Benefits of the Hiring Snapshot</h3></p>
 </div>
-
 <div align="middle" style="height: 500px">
 	<div align="left" style="margin-left: 2.12766%; height: 205px; float: left; display: block">
 		{{ 'img3.png' | asset_url | img_tag }}
@@ -222,21 +221,21 @@
 		<br>
 		<br>
 		<h5>
-		<a href="/pages/webinar-landing-page" style="margin-right: 13%"">Watch our interview best practices webinar</a></h5>
+		<a href="/" style="margin-right: 13%"">Watch our interview best practices webinar</a></h5>
 	</div>
 </div>
-</div>
 <div align="middle">
-	<a href="#pricing" style="height: 50px; width: 200px; background-color: #d9d9d9" class="btn btn--regular btn--outline">Try it Now</a>
+	<a href="/" style="height: 50px; width: 200px; background-color: #d9d9d9" class="btn btn--regular btn--outline">Try it Now</a>
 </div>
-<div style="height: 175px; background-color: #d9d9d9; margin-top: 40px" class="text-center">
+<div style="height: 350px; background-color: #d9d9d9; margin-top: 40px" class="text-center">
 	<h3 style="padding-top: 30px">Start hiring better with Topgrading</h3>
 	<br>
-	<h4 style="font-weight: normal;">Topgrading is the most proven & effective hiring method.  Get our <a href="http://www.topgrading.com/ebook-exit-offer/">free eGuide: Topgrading401</a></h4>
-</div>
-<div style="height: 125px; background-color: #c9c9c9;" class="text-center">
-	<div align="left" style="padding-top: 4%; margin-left: 8.12766%; float: left; display: block"><h4 style="font-weight: normal;">Talk with a Topgrading expert about in-depth interview training</h4></div>
-	<div align="right" style="padding-top: 4%; margin-right: 10%"><h4>(847) 244-5544  ·  sales@topgrading.com</h4></div>
+	<h4 style="font-weight: normal;">Topgrading is the most proven & effective hiring method.  Get our <a href="/">free eGuide: Topgrading401</a></h4>
+	<br><br><br><br>
+	<div>
+		<div align="left" style="margin-left: 8.12766%; float: left; display: block"><h4 style="font-weight: normal;">Talk with a Topgrading expert about in-depth interview training</h4></div>
+		<div align="right" style="margin-right: 10%"><h4>(847) 244-5544  ·  sales@topgrading.com</h4></div>
+	</div>
 </div>
 {% schema %}
 	{
@@ -313,28 +312,3 @@
 		]
 	}
 {% endschema %}
-
-
-<!-- {% include 'features' %}
-
-{% include 'webinar-landing-page' %}
-
-{% include 'snapshot-checkout' %}
-
-{% include 'snapshot-checkout-confirmation' %}
- -->
-<!-- {% include 'webinar-checkout' %} -->
-
-<!-- {% include 'webinar-checkout-confirmation' %} -->
-
-<!-- {% include 'sign-in' %}
-
-{% include 'first-time-sign-in' %}
-
-{% include 'accounts-page-initial-state' %}
-
-{% include 'candidate-details-popup' %}
-
-{% include 'accounts-page-invitations-sent' %}
-
-{% include 'account-page-more-invitations-sent' %} -->

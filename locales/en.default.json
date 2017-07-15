@@ -7,7 +7,7 @@
     "404": {
       "title": "404",
       "subtitle": "Page Not Found",
-      "content_html": "The page you requested does not exist. Click <a href=\"/collections/all\">here</a> to continue shopping."
+      "content_html": "The page you requested does not exist. Click <a href=\"\/collections\/all\">here<\/a> to continue shopping."
     },
     "search": {
       "title": "Search",
@@ -132,7 +132,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal/Zip Code",
+      "zip": "Postal\/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -218,11 +218,10 @@
     },
     "onboarding": {
       "section_title": "Almost there...",
-      "product_title": "Example Product",
+      "product_title": "Example Product Title",
       "modal_title": "Almost there...",
       "no_products_collection": "There are no products yet, but once you begin adding them they will show up here regardless if they are in a collection.",
       "add_product": "Add a Product",
-      "product_title": "Example Product Title",
       "no_content": "This section doesn’t currently include any content. Add content to this section using the sidebar."
     }
   },
@@ -262,7 +261,7 @@
       "add_to_apple_wallet": "Add to Apple Wallet"
     }
   },
-  "date_formats":{
+  "date_formats": {
     "month_day_year": "%B %d, %Y"
   }
 }

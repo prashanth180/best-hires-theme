@@ -23,8 +23,10 @@
   <meta name="theme-color" content="{{ settings.color_primary }}">
 
   {% include 'head_fonts' %}
+  {{ 'my-theme.scss.css' | asset_url | stylesheet_tag }}
   {{ '//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css' | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+
 
   <script>
     var theme = {

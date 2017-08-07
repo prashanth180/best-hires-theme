@@ -28,52 +28,9 @@
       </aside>
     {% endif %}
 
-    <footer class="site-footer small--text-center" role="contentinfo">
-
-      <div class="wrapper text-center">
-
-        <div class="h1 footer__logo" itemscope itemtype="http://schema.org/Organization">
-          {% if section.settings.footer_logo != blank %}
-           {% if section.settings.footer_logo_max_width != empty %}
-            {% capture image_size %}{{ section.settings.footer_logo_max_width | escape }}x{% endcapture %}
-           {% else %}
-            {% assign image_size = "150x" %}
-           {% endif %}
-            <a href="/" itemprop="url" class="footer__logo-link">
-              <img src="{{ section.settings.footer_logo | img_url: image_size }}" alt="{{ shop.name }}" itemprop="logo">
-            </a>
-          {% else %}
-            <a href="/" itemprop="url" class="site-header__logo-text">{{ shop.name }}</a>
-          {% endif %}
-        </div>
-
-        {% include 'newsletter' %}
-
-        {% if section.settings.footer_linklist %}
-          <div class="link-list">
-            {% for link in linklists[section.settings.footer_linklist].links %}
-              <a class="footer-link" href="{{ link.url }}">{{ link.title }}</a>
-            {% endfor %}
-          </div>
-          <hr>
-        {% endif %}
-
-        <div class="copy">
-          <p class="text">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }} <a href="/">{{ shop.name }}</a></p>
-          <p class="powered">{{ powered_by_link }}</p>
-        </div>
-
-        {% assign payment_icons_available = 'amazon_payments,american_express,bitcoin,cirrus,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,jcb,litecoin,maestro,master,paypal,visa,apple_pay' | split: ',' %}
-        {% if section.settings.footer_payment_enable and shop.enabled_payment_types != empty %}
-          <div class="pay-icons">
-            {% for type in shop.enabled_payment_types %}
-              {% if payment_icons_available contains type %}
-                {% include 'asset_svg' with type %}
-              {% endif %}
-            {% endfor %}
-          </div>
-        {% endif %}
-
+    <footer class="site-footer small--text-left" style="background-color:white;">
+      <div class="wrapper text-left">
+      Privacy Policy/ Terms & Conditions/Copyright 2017 Topgrading.com. All Rights Reserved.
       </div>
 
     </footer>

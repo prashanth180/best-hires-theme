@@ -66,6 +66,7 @@
 	/* Add shadows on hover */
 	.price-imp:hover {
 	    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+
 	}
 
 	/* Pricing header */
@@ -108,6 +109,12 @@
 	    text-decoration: none;
 	    font-size: 18px;
 	}
+
+	.img-icon {
+	    float: left;
+	    clear: both;
+	}
+
 
 	/* Change the width of the three columns to 100% 
 	(to stack horizontally on small screens) */
@@ -213,77 +220,96 @@
 	</div>
 </div>
 
-<!-- <div align="middle" style="height: 650px">
-	<div style="background-color: #d9d9d9; height: 600px; width: 22.1%; margin-left: 2.22766%; float: left; display: block;">
-		<p><h2>Lite</h2></p>
-		<div style="background-color: #f5f5f0;margin-top: 2.22766%;  height: 15%;">
-			<h3 style="padding-top: 7.5%">$250$25 / candidate</h3>
-		</div>
-		<div align="left" style="font-size: 150%; font-weight: normal;">
-			<li>
-				<ul>10 candidate invitations</ul>
-				<ul>Standard screening questions</ul>
-				<ul>Topgrading snapshot & career history for each candidate</ul>
-			</li>
-		</div>
+<div class="form__row" style="background-color:#FFF;color:#1D3B55;">
+	<div class="form__column thirty" align="left" >
+		{{ 'culligan-signature.png' | asset_url | img_tag }}
 	</div>
-	<div style="background-color: #d9d9d9; height: 600px; width: 22.1%; margin-left: 2.12766%; float: left; display: block;">
-		
-	</div>
-	<div style="background-color: #d9d9d9; height: 600px; width: 22.1%; margin-left: 2.12766%; float: left; display: block;">
-		
-	</div>
-	<div style="background-color: #d9d9d9; height: 600px; width: 22.1%; margin-left: 2.12766%; float: left; display: block;">
-		
-	</div>
-</div> -->
-
-<div style="background-color:#FFF; height: 301px; border-style: solid;  border-bottom: solid #d9d9d9">
-	<div align="left" style="margin-left: 2.12766%; height: 300px; float: left; display: block">
-		{{ 'img2.png' | asset_url | img_tag }}
-	</div>
-	<div style="height: 300px; width: 67%; margin-left: 0%; margin-right: 6%; float: left; display: block;background-color:#FFF" class="text-center">
+	<div class="form__column fifty" style="float: left;background-color:#FFF;" >
 			<br>
-			<p><h3>Hire smarter with Topgrading</h3></p>
-			<p><h5 style="font-weight: normal">“The Hiring Snapshot is amazing!  It includes the Topgrading “truth serum,” and takes almost zero time to use.  Before even talking with a candidate you can know if they are a job hopper, their full salary history, how every boss would rate their overall performance and the real reasons they left employers.”</h5></p>
-			<p><h4 style="padding-left: 0px; font-weight: normal">- Scott Clawson, CEO of Culligan</h4></p>
+			<p><h3 class="text-center" style="color:#FF8700;">Hire smarter with Topgrading</h3></p>
+			<p><h5 style="font-weight: normal;color:#1D3B55;">“The Hiring Snapshot is amazing!  It includes the Topgrading “truth serum,” and takes almost zero time to use.  Before even talking with a candidate you can know if they are a job hopper, their full salary history, how every boss would rate their overall performance and the real reasons they left employers.”</h5></p>
+			<p><h4 style="padding-left: 0px; font-weight: normal;color:#1D3B55;">- Scott Clawson, CEO of Culligan</h4></p>
 	</div>
-</div>
-<div id="benefits" style="position: relative; padding-top: 8%">
-<div  style="height: 60px" class="text-center" >
-	<p><h3>Benefits of the Hiring Snapshot</h3></p>
+	<div class="form__column five"></div>
 </div>
 
-<div align="middle" style="height: 500px">
-	<div align="left" style="margin-left: 2.12766%; height: 205px; float: left; display: block">
-		{{ 'img3.png' | asset_url | img_tag }}
+<div id="benefits" style="background-color:#2565A1;">
+	<div class="form__row">
+		<div class="text-center form__column full" >
+			<p><h3 style="color:white;">Benefits of the Hiring Snapshot</h3></p>
+		</div>
 	</div>
-	<div align="right" style="margin-left: 2.12766%; height: 205px; float: left; display: block">
-		{{ 'img4.png' | asset_url | img_tag }}
+	<div class="form__row">
+		<div class="form__column ten">
+		</div>
+		<div class="form__column forty text-center">
+			<img src="{{ 'one.png' | asset_url }}" class="img-icon" alt= />
+			<p class="text-left" >
+				<b style="color:yellow">Truthful Candidate Application</b>
+				</br>
+				<span style="color:white;">
+				Over 80% of resumes have deliberate falsehoods. To fix this, we use a truth motivator: candidates are told up-front that they will arrange reference calls with prior bosses. This inspires them to tell the truth in their entire application.
+				</span>
+			</p>
+		</div>
+		<div class="form__column forty text-center">
+			<img src="{{ 'two.png' | asset_url }}" class="img-icon" alt= />
+			<p class="text-left" >
+				<b style="color:yellow">Valuable Canidate Insights</b>
+				</br>
+				<span style="color:white;">
+				Get more useful details that help you look for the top performers. See a candidate's salary history, their performance ratings by prior bosses, and reasons they have changed jobs.
+				</span>
+			</p>
+		</div>
+		<div class="form__column ten">
+		</div>
 	</div>
-	<div align="left" style="margin-left: 4.12766%; height: 265px; float: left; display: block">
-		{{ 'img5.png' | asset_url | img_tag }}
+	<div class="form__row">
+		<div class="form__column ten">
+		</div>
+		<div class="form__column forty text-center">
+			<div>
+			<img src="{{ 'three.png' | asset_url }}" class="img-icon" alt= />
+			</div>
+			<div>
+			<p class="text-left" >
+				<b style="color:yellow">Save Hiring Time</b>
+				</br>
+				<span style="color:white;">
+				The truth motivator causes low-performers to drop out, so you don't waste any valuable time on them. Snapshot invitations instead. You can focus your time on the top 3 candidates and save 30% in hiring time. You're only charged for candidates that start their invitation.
+				</span>
+			</p>
+			</div>
+		</div>
+		<div class="form__column forty text-center">
+			<img src="{{ 'four.png' | asset_url }}" class="img-icon" alt= />
+			<p class="text-left" >
+				<b style="color:yellow">More Revealing Interviews</b>
+				</br>
+				<span style="color:white;">
+				Improve your interviewing techniques, with the most effective interview methods. Learn how to better identify top performing candidates with a Topgrading Interview and avoid costly mis-hires.
+				</br><a href="">Watch our interview best practices webinar</a>
+				</span>
+			</p>
+		</div>
+		<div class="form__column ten">
+		</div>
 	</div>
-	<div align="right" style="margin-left: 4.12766%; height: 265px; float: left; display: block">
-		{{ 'img6.png' | asset_url | img_tag }}
-		<br>
-		<br>
-		<h5>
-		<a href="/pages/webinar-landing-page" style="margin-right: 13%"">Watch our interview best practices webinar</a></h5>
+	<div class="form__row">
+		<div class="form__column full text-center">
+			<a href="#pricing" class="btn btn--regular btn--dark btn--outline"  style="background:white,color:#3972A3;">Try it now</a>
+		</div>
 	</div>
 </div>
-</div>
-<div align="middle">
-	<a href="#pricing" style="height: 50px; width: 200px; background-color: #d9d9d9" class="btn btn--regular btn--outline">Try it Now</a>
-</div>
-<div style="height: 175px; background-color: #d9d9d9; margin-top: 40px" class="text-center">
+<div style="height: 175px; background-color: #D7E3EC;" class="text-center">
 	<h3 style="padding-top: 30px">Start hiring better with Topgrading</h3>
 	<br>
 	<h4 style="font-weight: normal;">Topgrading is the most proven & effective hiring method.  Get our <a href="http://www.topgrading.com/ebook-exit-offer/">free eGuide: Topgrading401</a></h4>
 </div>
-<div style="height: 125px; background-color: #c9c9c9;" class="text-center">
+<div style="height: 125px; background-color: #D7E3EC;" class="text-center">
 	<div align="left" style="padding-top: 4%; margin-left: 8.12766%; float: left; display: block"><h4 style="font-weight: normal;">Talk with a Topgrading expert about in-depth interview training</h4></div>
-	<div align="right" style="padding-top: 4%; margin-right: 10%"><h4>(847) 244-5544  ·  sales@topgrading.com</h4></div>
+	<div align="right" style="padding-top: 4%; margin-right: 10%"><h4><span style="color:orange;">(847) 244-5544</span>  ·  sales@topgrading.com</h4></div>
 </div>
 {% schema %}
 	{

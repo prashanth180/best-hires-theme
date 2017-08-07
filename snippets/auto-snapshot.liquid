@@ -74,7 +74,7 @@
 	    }
 	}
 </style>
-<div id="home-kickstarter" class="index-section home-kickstarter" data-section-id="{{ section.id }}" data-section-type="home-kickstarter" style="background-color: #d9d9d9">
+<div id="home-kickstarter" class="index-section home-kickstarter" data-section-id="{{ section.id }}" data-section-type="home-kickstarter" style="background-color: #457EB6">
 
 	<div class="home-kickstarter">
 
@@ -237,78 +237,3 @@
 		<div align="right" style="margin-right: 10%"><h4>(847) 244-5544  ·  sales@topgrading.com</h4></div>
 	</div>
 </div>
-{% schema %}
-	{
-	    "name": "Campaign tracker",
-	    "settings": [
-	      {
-	        "type": "text",
-	        "id": "home-kickstarter-title",
-	        "default": "Crowdfunding",
-	        "label": "Title"
-	      },
-	      {
-	        "type": "text",
-	        "id": "home-kickstarter-subtitle",
-	        "default": "Campaign tracker",
-	        "label": "Subtitle"
-	      },
-	      {
-	        "type": "select",
-	        "id": "home-kickstarter-style",
-	        "default":"pie",
-	        "label": "Stats style",
-	        "options": [
-	          {
-	            "value": "pie",
-	            "label": "Pie with smaller stats"
-	          },
-	          {
-	            "value": "bar",
-	            "label": "Bar with larger stats"
-	          }
-	        ]
-	      },
-	      {
-	        "type": "image_picker",
-	        "id": "home-kickstarter-bg",
-	        "label": "Background image",
-	        "info": "Light background on the left side"
-	      },
-	      {
-	        "type": "header",
-	        "content": "Campaign details"
-	      },
-	      {
-	        "type": "text",
-	        "id": "home-kickstarter-percent",
-	        "default": "75",
-	        "label": "Funded percent"
-	      },
-	      {
-	        "type": "text",
-	        "id": "home-kickstarter-amount",
-	        "default": "$1000",
-	        "label": "Funded amount"
-	      },
-	      {
-	        "type": "text",
-	        "id": "home-kickstarter-backers",
-	        "default": "10",
-	        "label": "Number of backers"
-	      },
-	      {
-	        "type": "text",
-	        "id": "home-kickstarter-url",
-	        "default": "https://www.shopify.com",
-	        "label": "Project URL"
-	      }
-	    ],
-	    "presets": [
-			{
-			"name": "Campaign tracker",
-			"category": "Store information"
-		 }
-		]
-	}
-{% endschema %}
